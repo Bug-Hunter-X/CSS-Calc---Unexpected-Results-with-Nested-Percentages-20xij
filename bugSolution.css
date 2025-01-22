@@ -1,0 +1,10 @@
+/* bugSolution.css */
+.container {
+  width: 50%;
+  /* corrected width, removes percentage dependency on different parents*/
+}
+
+.inner {
+  width: 50%; /* now relative to .container, not the whole document */
+}
+/*Avoid nested calculations with percentages relying on different parents*/
